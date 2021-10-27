@@ -33,109 +33,121 @@
     </header>
 
     <!-- Begin schedule listing -->
-    <div class="container">
-      <div class="row">
+    <div class="container" id="schedule">
+      <div class="row" id="8am">
+        <div class="hour col-sm-1">
+         <p>8am</p>
+        </div>
+        <textarea class="description col-sm-10">
+        </textarea>
+        <button type="button" class="saveBtn col-sm-1" id="save">
+          <i class="fa fa-save fa-2x"></i>
+        </button>
+      </div>
+
+      <div class="row" id="9am">
         <div class="hour col-sm-1">
          <p>9am</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="10am">
         <div class="hour col-sm-1">
          <p>10am</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="11am">
         <div class="hour col-sm-1">
          <p>11am</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="12pm">
         <div class="hour col-sm-1">
          <p>12pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="1pm">
         <div class="hour col-sm-1">
          <p>1pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="2pm">
         <div class="hour col-sm-1">
          <p>2pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="3pm">
         <div class="hour col-sm-1">
          <p>3pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="4pm">
         <div class="hour col-sm-1">
          <p>4pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
-      <div class="row">
+      <div class="row" id="5pm">
         <div class="hour col-sm-1">
          <p>5pm</p>
         </div>
         <textarea class="description col-sm-10">
         </textarea>
-        <button type="button" class="saveBtn col-sm-1">
+        <button type="button" class="saveBtn col-sm-1" id="save">
           <i class="fa fa-save fa-2x"></i>
         </button>
       </div>
 
     </div>
     <!-- End schedule listing -->
-
+    
+    <script src="./assets/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script type="text/javascript">
@@ -143,12 +155,12 @@
       {
         // instantiate a moment object
         var NowMoment = moment().format("MM/DD/YYYY");
-        var weekDayName =  moment(NowMoment).format('dddd');
+        // var weekDayName =  moment(NowMoment).format('dddd');
         
         // display value of moment object in #displayMoment div
         var eDisplayMoment = document.getElementById("currentDay");
-        eDisplayMoment.innerHTML = "Today is: " + weekDayName + " " + NowMoment;
-    
+        eDisplayMoment.innerHTML = "Today is: "  + " " + NowMoment;
+        
       })();
       </script>
   </body>
