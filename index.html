@@ -155,11 +155,11 @@
       {
         // instantiate a moment object
         var NowMoment = moment().format("MM/DD/YYYY");
-        // var weekDayName =  moment(NowMoment).format('dddd');
+        var weekDayName =  moment(NowMoment).format('dddd');
         
         // display value of moment object in #displayMoment div
         var eDisplayMoment = document.getElementById("currentDay");
-        eDisplayMoment.innerHTML = "Today is: "  + " " + NowMoment;
+        eDisplayMoment.innerHTML = "Today is: "  + weekDayName + " " + NowMoment;
         
       })();
       </script>

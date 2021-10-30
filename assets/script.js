@@ -9,7 +9,7 @@ function saveItem(event) {
         var task = [timeId, description];
         data.push(task);
         localStorage.setItem("data", JSON.stringify(data));
-        console.log('item saved');
+        window.alert('Note saved');
     }
 };
 
@@ -22,8 +22,6 @@ function loadSchedule() {
         for (let outer = 0; outer < data.length; outer++) {
             var currentId = data[outer][0];
             var currentText = data[outer][1];
-            // console.log(currentId);
-            // console.log(currentText);
             for (let inner = 0; inner < scheduleCount; inner++) {
                 var scheduleEl = schedule.children[inner];
                 var scheduleId = schedule.children[inner].id;
