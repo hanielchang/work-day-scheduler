@@ -67,3 +67,6 @@ textarea{
   color: white;
 }
 
+.fa {
+  pointer-events:none;
+}
